@@ -1,3 +1,12 @@
+"""
+Geometric Camera Calibration Pipeline
+Author: Tsuriel Vizel
+
+Computes intrinsic camera matrices and distortion coefficients using a curated 
+dataset of chessboard images. The output matrices are serialized into .npz files 
+for use in the main UAV localization node.
+"""
+
 import cv2
 import numpy as np
 from pathlib import Path
